@@ -84,16 +84,16 @@ def update_student_info():
     db.commit()
 
 while True:
-    print("\n1. Додати нового студента")
-    print("2. Додати новий курс")
-    print("3. Показати список студентів")
-    print("4. Показати список курсів")
-    print("5. Зареєструвати студента на курс")
-    print("6. Показати студентів на конкретному курсі")
-    print("7. Оновити інформацію студента")
-    print("8. Вийти")
+    print("\n1. Add a new student")
+    print("2. Add a new course")
+    print("3. Show the list of students")
+    print("4. Show the list of courses")
+    print("5. Register a student for a course")
+    print("6. Show the list of students enrolled in a specific course")
+    print("7. Update the information about a student")
+    print("8. Close")
 
-    choice = input("Оберіть опцію (1-8): ")
+    choice = input("Choose an option (1-8): ")
 
     match choice:
         case "1":
