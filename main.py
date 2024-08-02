@@ -64,7 +64,7 @@ def register_student():
         ''', (student_id, course_id))
         db.commit()
 
-def show_student_course():
+def show_course_students():
     course_id = int(input("Course: "))
     info = db.execute('''SELECT name, age 
                       FROM students 
@@ -107,7 +107,7 @@ while True:
         case "5":
             register_student()
         case "6":
-            show_student_course()
+            show_course_students()
         case "7":
             update_student_info()
         case "8":
